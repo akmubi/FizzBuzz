@@ -21,7 +21,7 @@ OBJECTS := $(SOURCES:.c=.o)
 all:  $(BUILDPATH) target
 
 target: $(OBJECTS) timer.o
-	$(CC) $^ -o  $(FILENAME) $(CLIBS) -fopenmp
+	$(CC) $^ -o  $(FILENAME) $(CLIBS)
 
 $(BUILDPATH):
 	mkdir $(BUILDPATH)
@@ -36,7 +36,7 @@ run_null: $(RUNFILE)
 	$(RUNFILE) /dev/null
 
 %.o: %.c
-	$(CC) $(CFLAGS) $< -o $@ -fopenmp
+	$(CC) $(CFLAGS) $< -o $@
 
 TIMER_DIR := timer
 timer.o: $(TIMER_DIR)/timer.c
