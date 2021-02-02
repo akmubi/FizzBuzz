@@ -8,7 +8,7 @@ FizzBuzz in C (optimized)
 ```
 ## How to run
 
-Make sure that you have *make*, *clang* compiler
+Make sure that you have **make**, **clang** compiler
 
 1. Build
 ```
@@ -21,9 +21,9 @@ make
 
 Makefile also contains additional targets: ```run_null``` and ```run_default``` which respectevely output to ```/dev/null``` and ```/dev/stdout```.
 
-If you want do remove all object files and **build** folder execute ```make clean```
+If you want do remove all object files and *build* folder then execute ```make clean```
 
 ## Notes
 + Program is fixed on 1,000,000,000 iterations.
 + It uses pre-loaded pattern. Fills it in runtime with necessary numbers and write to file.
-+ It took about 2386 s. to output to /dev/stdout, 126 s. to output to text file and 24 s. to output to /dev/null in my machine
++ It took about 2386 s. to output to ```/dev/stdout```, 126 s. to output to text file and 24 s. to output to ```/dev/null``` in my machine
